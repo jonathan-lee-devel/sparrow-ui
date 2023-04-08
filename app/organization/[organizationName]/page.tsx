@@ -1,6 +1,10 @@
-import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
+interface OrganizationPageProps {
+    params: {
+        organizationName: string;
+    }
+}
 
-export default async function OrganizationPage({ params }: Params) {
+export default async function OrganizationPage({ params }: OrganizationPageProps) {
     const { organizationName } = params;
     return (
         <div className={"my-32"}>
