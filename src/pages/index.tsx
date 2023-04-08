@@ -17,7 +17,6 @@ export default function Home() {
                             <div className={"d-grid gap-3 d-sm-flex justify-content-sm-center"}>
                                 <Link className={"btn btn-outline-primary btn-lg px-4 me-sm-3"} href={"/users/register"}>Register</Link>
                                 <Link className={"btn btn-primary btn-lg px-4 me-sm-3"} href={"/users/login"}>Login</Link>
-                                <a className={"btn btn-outline-light btn-lg px-4"}>Register a Service</a>
                             </div>
                         </div>
                     </div>
