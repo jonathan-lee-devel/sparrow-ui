@@ -1,4 +1,4 @@
-name: Docker Image Next.js Build
+name: Docker Image NGINX Build
 
 on:
   push:
