@@ -1,4 +1,5 @@
 import { Inter } from 'next/font/google'
+import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -11,8 +12,8 @@ export default function Login() {
                       <div className="row justify-content-center">
                           <div className="col-lg-4 col-md-6 d-flex flex-column align-items-center justify-content-center">
                               <div className="d-flex justify-content-center py-4">
-                                  <a className="logo d-flex align-items-center w-auto" routerLink="/home">
-                                  </a>
+                                  <Link className="logo d-flex align-items-center w-auto" href={"/home"}>
+                                  </Link>
                               </div>
                               <div className="card mb-3">
                                   <div className="card-body">
@@ -22,7 +23,7 @@ export default function Login() {
                                       </div>
                                       <form className="row g-3 needs-validation">
                                       <div className="col-12">
-                                          <label className="form-label" for="yourUsername">E-mail Address</label>
+                                          <label className="form-label" htmlFor="yourUsername">E-mail Address</label>
                                           <div className="input-group has-validation">
                                               <input className="form-control" id="yourUsername"
                                               name="username" required
