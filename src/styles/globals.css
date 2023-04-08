@@ -11932,3 +11932,7 @@ textarea.form-control-lg {
   position: relative;
   left: 30px;
 }
+
+.card {
+  border-radius: 10%;
+}

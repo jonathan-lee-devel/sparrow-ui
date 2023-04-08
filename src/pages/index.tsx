@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
+import Link from "next/link";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -14,7 +15,8 @@ export default function Home() {
                             <h1 className={"display-5 fw-bolder text-white mb-2"}>Welcome to Sparrow</h1>
                             <p className={"lead text-white-50 mb-4"}>A delivery service application</p>
                             <div className={"d-grid gap-3 d-sm-flex justify-content-sm-center"}>
-                                <a className={"btn btn-primary btn-lg px-4 me-sm-3"}>Register /  Login</a>
+                                <Link className={"btn btn-outline-primary btn-lg px-4 me-sm-3"} href={"/users/register"}>Register</Link>
+                                <Link className={"btn btn-primary btn-lg px-4 me-sm-3"} href={"/users/login"}>Login</Link>
                                 <a className={"btn btn-outline-light btn-lg px-4"}>Register a Service</a>
                             </div>
                         </div>
